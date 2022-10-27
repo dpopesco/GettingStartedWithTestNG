@@ -1,14 +1,17 @@
 package unit;
 
-import baseclasses.UnitTestBaseClass;
 import app.DuplicateUserException;
 import app.UserManager;
+import baseclasses.UnitTestBaseClass;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
 
+import static app.TestPriority.HIGH;
+
+@Test(dependsOnGroups = "sanity")
 public class FirstTestNGTest extends UnitTestBaseClass {
 
     UserManager um;
@@ -43,7 +46,7 @@ public class FirstTestNGTest extends UnitTestBaseClass {
         Assert.assertEquals(user, "john@email.com");
     }
 
-    @Test(description = "Verify that getUser method returns null if the user does not exist")
+    @Test(priority = HIGH,description = "Verify that getUser method returns null if the user does not exist")
     public void getNonExistingUserReturnsNull() {
         //Act
         String user = um.getUser("john@email.com");
@@ -52,7 +55,8 @@ public class FirstTestNGTest extends UnitTestBaseClass {
         Assert.assertNull(user, "The method should return null if it doesn't find a user.");
     }
 
-    @Test(expectedExceptions = DuplicateUserException.class, expectedExceptionsMessageRegExp = ".*already exists")
+    @Test(expectedExceptions = DuplicateUserException.class,
+            expectedExceptionsMessageRegExp = ".*already exists")
     public void addDuplicateThrowsException() throws DuplicateUserException {
         //Act
         um.addUser("same@email.com");

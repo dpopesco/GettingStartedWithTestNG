@@ -34,4 +34,8 @@ public class UserManager {
     public boolean deleteUser(final String userEmail) {
         return userStorage.removeIf(e -> e.equals(userEmail));
     }
+
+    public Collection<String> getAllUsers() {
+        return userStorage;
+    }
 }
