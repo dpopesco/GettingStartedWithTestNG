@@ -4,24 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c38d9eb-90f0-459f-adb8-ada62627ac09" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DuplicateUserException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/UserManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/api/TestTimeout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/api/WebServiceTestWithSetup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/api/WebServiceTestWithSoftAssert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/baseclasses/UnitTestBaseClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/baseclasses/WebServiceBaseClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ui/UiPluralsightTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/unit/DisabledTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/unit/FirstTestNGTest.java" afterDir="false" />
+    <list default="true" id="0c38d9eb-90f0-459f-adb8-ada62627ac09" name="Changes" comment="add file">
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/CommonApiDataProviders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/api/ApiTestWithDataProviders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ui/UiTestWithDataProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/unit/UnitTestWithDataProviders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DuplicateUserException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/DuplicateUserException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/UserManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/unit/FirstTestNGTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unit/FirstTestNGTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,24 +39,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/diana/Automation/Tests",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/diana/Automation/Tests&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.UiPluralsightTest">
+  <component name="RunManager" selected="TestNG.ApiTestWithDataProviders.userEndPointReturns401">
+    <configuration name="ApiTestWithDataProviders.userEndPointReturns401" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="GettingStartedWithTestNG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api" />
+      <option name="MAIN_CLASS_NAME" value="api.ApiTestWithDataProviders" />
+      <option name="METHOD_NAME" value="userEndPointReturns401" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DisabledTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="GettingStartedWithTestNG" />
       <extension name="coverage">
@@ -75,46 +85,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="unit" />
       <option name="MAIN_CLASS_NAME" value="unit.DisabledTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FirstTestNGTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="GettingStartedWithTestNG" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="unit.FirstTestNGTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FirstTestNGTest.addDuplicateThrowsException" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="GettingStartedWithTestNG" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="unit.FirstTestNGTest" />
-      <option name="METHOD_NAME" value="addDuplicateThrowsException" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestTimeout" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="GettingStartedWithTestNG" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="api" />
-      <option name="MAIN_CLASS_NAME" value="api.TestTimeout" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -139,13 +109,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UiTestWithDataProvider.emptyPasswordFailsLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="GettingStartedWithTestNG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ui" />
+      <option name="MAIN_CLASS_NAME" value="ui.UiTestWithDataProvider" />
+      <option name="METHOD_NAME" value="emptyPasswordFailsLogin" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UnitTestWithDataProviders.emptyUserThrowsException" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="GettingStartedWithTestNG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="unit" />
+      <option name="MAIN_CLASS_NAME" value="unit.UnitTestWithDataProviders" />
+      <option name="METHOD_NAME" value="emptyUserThrowsException" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ApiTestWithDataProviders.userEndPointReturns401" />
+        <item itemvalue="TestNG.UiTestWithDataProvider.emptyPasswordFailsLogin" />
+        <item itemvalue="TestNG.UnitTestWithDataProviders.emptyUserThrowsException" />
         <item itemvalue="TestNG.UiPluralsightTest" />
         <item itemvalue="TestNG.DisabledTest" />
-        <item itemvalue="TestNG.TestTimeout" />
-        <item itemvalue="TestNG.FirstTestNGTest.addDuplicateThrowsException" />
-        <item itemvalue="TestNG.FirstTestNGTest" />
       </list>
     </recent_temporary>
   </component>
@@ -158,6 +164,21 @@
       <option name="presentableId" value="Default" />
       <updated>1666774711035</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1666801251597</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666801251597</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add file">
+      <created>1666801571307</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666801571307</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,5 +191,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="add file" />
+    <option name="LAST_COMMIT_MESSAGE" value="add file" />
   </component>
 </project>
