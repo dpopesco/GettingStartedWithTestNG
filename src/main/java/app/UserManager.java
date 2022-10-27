@@ -1,4 +1,6 @@
-package org.example;
+package app;
+
+import org.apache.commons.validator.routines.EmailValidator;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -11,7 +13,10 @@ public class UserManager {
         userStorage = new ArrayList<>();
     }
 
-    public boolean addUser(String userEmail) throws DuplicateUserException{
+    public boolean addUser(String userEmail) throws DuplicateUserException {
+        if (!EmailValidator.getInstance().isValid(userEmail)) {
+            throw new IllegalArgumentException("Not a valid email");
+        }
         for (String s : userStorage) {
             if (s.equals(userEmail)) {
                 throw new DuplicateUserException("User already exists");
@@ -28,5 +33,9 @@ public class UserManager {
 
     public boolean deleteUser(final String userEmail) {
         return userStorage.removeIf(e -> e.equals(userEmail));
+    }
+
+    public Collection<String> getAllUsers() {
+        return userStorage;
     }
 }
