@@ -5,28 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c38d9eb-90f0-459f-adb8-ada62627ac09" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DuplicateUserException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/UserManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/api/TestTimeout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/api/WebServiceTestWithSetup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/api/WebServiceTestWithSoftAssert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/baseclasses/UnitTestBaseClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/baseclasses/WebServiceBaseClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ui/UiPluralsightTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/unit/DisabledTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/unit/FirstTestNGTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chromedriver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/UiPluralsightTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/UiPluralsightTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -41,6 +32,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
   <component name="ProjectId" id="2GfLUIqandIxczzyQPsX0XSd9e4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -52,7 +46,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/diana/Automation/Tests",
+    "last_opened_file_path": "D:/Projects/Automation/AutomationPractice",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -64,7 +58,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.UiPluralsightTest">
+  <component name="RunManager" selected="TestNG.TestTimeout">
     <configuration name="DisabledTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="GettingStartedWithTestNG" />
       <extension name="coverage">
@@ -84,21 +78,15 @@
     </configuration>
     <configuration name="FirstTestNGTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="GettingStartedWithTestNG" />
-      <option name="PACKAGE_NAME" value="" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="unit" />
       <option name="MAIN_CLASS_NAME" value="unit.FirstTestNGTest" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FirstTestNGTest.addDuplicateThrowsException" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="GettingStartedWithTestNG" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="unit.FirstTestNGTest" />
-      <option name="METHOD_NAME" value="addDuplicateThrowsException" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -122,16 +110,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UiPluralsightTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="WebServiceTestWithSetup" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="GettingStartedWithTestNG" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ui.*" />
+          <option name="PATTERN" value="api.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ui" />
-      <option name="MAIN_CLASS_NAME" value="ui.UiPluralsightTest" />
+      <option name="PACKAGE_NAME" value="api" />
+      <option name="MAIN_CLASS_NAME" value="api.WebServiceTestWithSetup" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebServiceTestWithSoftAssert" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="GettingStartedWithTestNG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api" />
+      <option name="MAIN_CLASS_NAME" value="api.WebServiceTestWithSoftAssert" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -141,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.UiPluralsightTest" />
-        <item itemvalue="TestNG.DisabledTest" />
         <item itemvalue="TestNG.TestTimeout" />
-        <item itemvalue="TestNG.FirstTestNGTest.addDuplicateThrowsException" />
         <item itemvalue="TestNG.FirstTestNGTest" />
+        <item itemvalue="TestNG.DisabledTest" />
+        <item itemvalue="TestNG.WebServiceTestWithSoftAssert" />
+        <item itemvalue="TestNG.WebServiceTestWithSetup" />
       </list>
     </recent_temporary>
   </component>

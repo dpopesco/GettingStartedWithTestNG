@@ -13,7 +13,8 @@ public class UiPluralsightTest {
 
     @BeforeMethod
     public void startUpBrowser() {
-        System.setProperty("web-driver.chrome.driver", "/home/diana/Automation/GettingStartedWithTestNG/chromedriver.exe");
+        String localDir = System.getProperty("user.dir");
+        System.setProperty("web-driver.chrome.driver", localDir + "/chromedriver.exe");
 
         driver = new ChromeDriver();
         driver.get("https://pluralsight.com");
@@ -34,8 +35,6 @@ public class UiPluralsightTest {
 
     private void doBasicCheck() {
         driver.findElement(By.className("ps-nav-brand"));
-        //driver.findElement(By.className("-nav-brand"));
-
     }
 
 }
